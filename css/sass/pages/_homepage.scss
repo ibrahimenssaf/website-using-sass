@@ -1,0 +1,200 @@
+/*  Start Slider  */
+
+.slider {
+    
+    blockquote{
+        font: {
+            size: 20px;
+            family: Tahoma,Arial;
+            weight: bold;
+            style: italic;
+        }
+        line-height: 1.7;
+        text-align: center;
+        color: #5e5e5e;
+        width: 80%;
+        margin: 30px auto;
+        
+    }
+    
+    img{
+        max-width: 100%;
+        
+    }
+    
+    .bullets{
+        text-align: center;
+        li {
+            cursor: pointer;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: $greyColor;
+            border-radius: 50%;
+            border: 2px solid $greyColor;
+            &.active, &:hover {
+                background-color: #fff;
+                border: 2px solid #333;
+            }
+        }
+    }
+}
+/*  End Slider   */
+
+/*******************
+ ************************
+***************************/
+
+/* Start Services */
+.services {
+      
+    .service-box{    /* Div */
+    
+        @media #{$minMeduim} {
+              float: $float-left;
+              width: (100% /3);
+              &:not(:last-of-type) {
+                  padding-right: 0px;
+                }  
+            }
+        @media #{$maxMobile} {
+            i {
+                display: block;
+                margin-bottom: 15px;
+            }
+        }
+        
+        .service-title { /* h3 */
+            color: #333;
+            i{
+               font-size: 30px;
+                position: relative;
+                top: 4px;
+                right: 5px;
+                
+            }
+        }
+        
+        .service-desc { /* p */
+            color: #777;
+            line-height: 1.5;
+        }
+        
+        .service-link { /* a */
+            color: $redColor;
+            text-decoration: none;
+        }
+    }
+}
+
+/* End Services */
+
+
+
+
+
+/*Start Our-Team */
+
+.our-team { 
+    padding-top: 50px;
+    margin-bottom: 50px;
+    
+    
+    .team-box{
+            margin-top: 30px;
+            float: $float-left;
+            padding-right: 20px;
+            padding-left: 20px;
+            width: (100% / 5);
+        
+        @media #{$maxMobile} {
+            width: 100%;
+            text-align: center;
+        }
+        
+        @media #{$minSmall}{
+            width: (100% /2);
+            float: $float-left;
+            
+            
+        }
+        
+        @media #{$minMeduim}{
+              width: (100% / 3);
+            text-align: $text-left;
+            margin-bottom: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+            &:nth-child(5), &:nth-child(6){
+                width: (100% / 2);
+                text-align: center;
+            }
+
+        }
+        
+        @media #{$minLarge}{
+            width: (100%/ 5) !important;
+        }
+        
+        
+       
+    
+       
+        img{
+            max-width: 100%;
+        }
+        .team-title{
+                color: #666;
+            font-weight: normal;
+            span{
+                font-weight: bold;
+                font-size: 18px;
+            }
+        }
+        
+        .team-desc{
+            line-height: 1.6;
+            color: $greyColor;
+            
+        }
+        
+        .team-link{
+            color: $redColor;
+        }
+    }
+}
+
+/*End  Our-Team */
+
+
+
+/* Start Our-company */
+
+.our-company{
+    .co-box{
+        padding-top: 20px;
+        width: (94% / 3);
+        float: $float-left;
+        &:not(:last-of-type){
+            margin-right: 3%;
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+}
+/* End  Our-company */
+
+
+
+
+
+
+
+
+
+
+
+
+
+

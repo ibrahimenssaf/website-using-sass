@@ -1,0 +1,155 @@
+/*
+$float-left: right;
+$float-right: left;
+
+*/
+@import 'sass/helpers/variables';
+$float-left: right;
+$float-right: left;
+
+$text-right: left;
+$text-left: right;
+
+
+/*Start Header*/
+.header{
+    .logo{
+     
+        
+        @media #{$minMeduim} {
+            float: $float-left;
+            text-align: $text-left;
+        }
+        .the-toggler{right: auto;left: 15px;}
+    }
+    
+    .navbar{
+
+        @media #{$minSmall} {
+            text-align: $text-left;
+        }
+        
+        @media #{$minMeduim} {
+            float: $float-left;
+        }
+        
+        @media #{$maxMobile} {
+        }
+        
+        li{
+            float: $float-left;
+            @media #{$maxMobile} {
+                text-align: $text-left;
+                }
+        }
+    }
+}
+
+
+/*End Header */
+
+
+
+
+
+
+/* Start Services */
+.services {
+      
+    .service-box{    /* Div */
+    
+        @media #{$minMeduim} {
+              float: $float-left; 
+            }  
+    }
+}
+
+/* End Services */
+
+
+
+
+
+
+
+/*Start Our-Team */
+
+.our-team {     
+    .team-box{
+            float: $float-left;        
+        @media #{$minSmall}{
+            float: $float-left;    
+        }
+        
+        @media #{$minMeduim}{
+            text-align: $text-left;
+        } 
+    }
+}
+
+/*End  Our-Team */
+
+
+
+
+/* Start Our-company */
+
+.our-company{
+    .co-box{
+        float: $float-left;
+    }
+}
+/* End  Our-company */
+
+
+
+
+
+    /* Start Footer */
+
+.footer{
+    .gallery, .info, .contact{
+        float: $float-left;
+    }
+    
+    .gallery {
+        .img-box{
+                img{
+                    @media #{$minSmall}{
+                        float: $float-left;
+                    }
+          
+                    }
+               .text-box{
+                   @media #{$minSmall}{
+                       float: $float-right;
+                   }
+                } 
+              }
+        }
+        
+        
+        
+    
+    
+       
+      
+       
+    
+
+
+    .copyright{
+        .text, .author{
+            float: $float-left;
+        }
+        
+        .author {
+            text-align: $text-right;
+               
+            }
+        }
+
+    }
+
+
+    /*End Footer*/

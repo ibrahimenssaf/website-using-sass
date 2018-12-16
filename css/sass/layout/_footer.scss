@@ -1,0 +1,140 @@
+.footer{
+    background-color: #e2e2e2;
+    margin-top: 70px;
+    padding-top: 30px;
+    overflow: hidden;
+    
+
+    .gallery, .info, .contact{
+        float: $float-left;
+        margin-bottom: 20px;
+        @media #{$maxMobile}{
+            width: 100%;
+            text-align: center;
+        }
+    }
+    
+    .gallery {
+        
+        @media #{$minSmall}{
+                  width: 100%;
+  
+        }
+        
+        @media #{$minMeduim}{
+                    width: 50%;
+
+        }
+        
+        .img-box{
+            margin-bottom: 20px;
+            overflow: hidden;
+                img{
+                    @media #{$minSmall}{
+                        float: $float-left;
+                    }
+                    width: 150px;
+                    height: 150%;
+                    }
+               .text-box{
+                   @media #{$minSmall}{
+                       float: $float-left;
+                        margin-left: 15px;
+                       margin-right: 15px;
+                       float: $float-right;
+                       width: calc(100% - (150px + 30px));
+                   }
+          
+                   
+                   h4{
+                       color: $redColor;
+                       margin: 10px 0 0;
+                   }
+                   p{
+                      color: #888;
+                       line-height: 1.9;
+                       margin-top: 5px;
+                   }
+                } 
+        }
+        
+        
+    }
+    
+    .info {
+        @media #{$minSmall}{
+            width: 50%;
+        }
+        @media #{$minMeduim}{
+            width: 25%;
+        }
+        ul{
+            color: #888;
+            line-height: 1.6;
+            
+            li {
+                
+                &.space{margin-bottom: 30px;}
+                span{
+                    color: $redColor;    
+                }
+            }
+        }
+        h4{
+            color: #888;
+            font-weight: bold;
+            
+        }
+        p{
+            color: #888;  
+         } 
+        }
+    
+    .contact {
+        @media #{$minSmall}{
+            width: 50%;
+        }
+        @media #{$minMeduim}{
+            width: 25%;
+        }
+        
+        input[type='text'],
+        input[type='email'],
+        textarea{
+            border: 1px solid #c9c9c9;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            width: 100%;
+        }
+        textarea{
+            height: 140px;
+        }
+    }
+    
+    .section-title{
+        color: #444;
+        font-weight: normal;
+    }
+
+
+    .copyright{
+        padding: 25px 0;
+        border-top: 1px solid #c5c5c5;
+        color: #888;
+        overflow: hidden;
+        .text, .author{
+            float: $float-left;
+            width: 50%;
+        }
+        
+        .author {
+            text-align: $text-right;
+            span{color: rgba($redColor,.8);
+                &:hover{
+                    color: $redColor;
+                }
+            }
+        }
+    }
+}
